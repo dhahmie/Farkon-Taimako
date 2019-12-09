@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "827668595980",
+    "firebase_url": "https://farkon-taimako.firebaseio.com",
+    "project_id": "farkon-taimako",
+    "storage_bucket": "farkon-taimako.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827668595980:android:3d8ffd37013795bb583529",
+        "android_client_info": {
+          "package_name": "com.example.farkontaimako"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827668595980-7h5qtvc4fit5dfkq36lql3kjkdof82hg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.farkontaimako",
+            "certificate_hash": "0c3d15dc6e1eb436490933fa055f8b16948859e4"
+          }
+        },
+        {
+          "client_id": "827668595980-2a53rk0hts147achqbqd4i49umsbudi6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdH87ga1w6AuVbliY-mcJNzrOpbND4M9k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827668595980-2a53rk0hts147achqbqd4i49umsbudi6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
