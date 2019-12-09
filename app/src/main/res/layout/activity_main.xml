@@ -10,6 +10,7 @@
 
     <EditText
         android:id="@+id/edEmail"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
@@ -19,6 +20,7 @@
 
     <EditText
         android:id="@+id/edPass"
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -26,11 +28,15 @@
 
     <Button
         android:id="@+id/btnLogin"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"/>
     <Button
         android:id="@+id/btnReg"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"/>
