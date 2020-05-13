@@ -62,7 +62,7 @@ public class AddFirstAidTip extends AppCompatActivity {
         btnImgUpload = findViewById(R.id.btnImg);
         btnPostUpload = findViewById(R.id.btnPostTip);
 
-        imgURL = findViewById(R.id.imgFirstAid);
+        imgURL = findViewById(R.id.imgAidIcon);
 
         btnImgUpload.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,22 +78,12 @@ public class AddFirstAidTip extends AppCompatActivity {
             public void onClick(View v) {
                 if(locUri != null)
                 {
-                    /*stoRef.putFile(locLink).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            strImgUrl = taskSnapshot.getMetadata().getReference().getDownloadUrl().toString();
-
-                        }});*/
-
                     Task<Uri> tContinuationResultTask = (Task<Uri>) stoRef.putFile(locLink).continueWithTask(new Continuation<UploadTask.TaskSnapshot, Task<Uri>>() {
                         @Override
                         public Task<Uri> then(Task<UploadTask.TaskSnapshot> task) throws Exception {
                             if (!task.isSuccessful()) {
                                 throw task.getException();
                             }
-
-                            // Continue with the task to get the download URL
-                            //strImgUrl = stoRef.getDownloadUrl().toString();
                             return stoRef.getDownloadUrl();
                         }
                     }).addOnCompleteListener(new OnCompleteListener<Uri>() {
@@ -129,7 +119,7 @@ public class AddFirstAidTip extends AppCompatActivity {
                 locUri = uri.toString();
 
                 try {
-                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), locLink);
+                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(getBaseContext().getContentResolver(), locLink);
                     imgURL.setImageBitmap(bitmap);
                 } catch (IOException e) {
                     e.printStackTrace();

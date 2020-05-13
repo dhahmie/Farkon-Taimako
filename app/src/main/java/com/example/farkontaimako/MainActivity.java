@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
-                            startActivity(new Intent(MainActivity.this, ViewAidList.class));
+                            Intent intent = new Intent(MainActivity.this, ViewAidList.class);
+                            intent.putExtra("loginStatus","LoggedIn");
+                            startActivity(intent);
                             Toast.makeText(getApplicationContext(), "Welcome", Toast.LENGTH_SHORT).show();
                         }
                         else

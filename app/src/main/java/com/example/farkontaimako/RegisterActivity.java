@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -53,6 +54,7 @@ public class RegisterActivity extends AppCompatActivity {
                                 if(task.isSuccessful())
                                 {
                                     fbDB.getReference("Users").push().setValue(user);
+                                    Log.i("Registered", "Done");
                                 }
                                 else
                                 {

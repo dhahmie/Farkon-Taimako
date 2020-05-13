@@ -32,7 +32,7 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:text="Add Health Tip"/>
                     <ImageView
-                        android:id="@+id/imgFoodIcon"
+                        android:id="@+id/imgAidIcon"
                         android:layout_width="300dp"
                         android:layout_height="150dp"
                         android:src="@mipmap/ic_launcher"
