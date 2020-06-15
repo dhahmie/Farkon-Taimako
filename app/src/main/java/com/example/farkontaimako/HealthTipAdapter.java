@@ -49,7 +49,7 @@ public class HealthTipAdapter extends RecyclerView.Adapter<HealthTipAdapter.View
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent healthIntent = new Intent(context, HealthDetails.class);
+                Intent healthIntent = new Intent(activity, HealthDetails.class);
 
                 healthIntent.putExtra("title",healthTipObject.tipTitle);
                 healthIntent.putExtra("phoneNumber", healthTipObject.expertsNumber);
@@ -58,6 +58,7 @@ public class HealthTipAdapter extends RecyclerView.Adapter<HealthTipAdapter.View
                 healthIntent.putExtra("prevention", healthTipObject.tipPrevention);
                 healthIntent.putExtra("symptoms", healthTipObject.tipSymptoms);
 
+                healthIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(healthIntent);
             }
         });

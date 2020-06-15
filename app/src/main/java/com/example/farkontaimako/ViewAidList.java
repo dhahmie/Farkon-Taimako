@@ -57,13 +57,10 @@ public class ViewAidList extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot postSnap : dataSnapshot.getChildren())
                 {
-                    for(DataSnapshot nodeShot : postSnap.getChildren())
+                    HealthTipObject healthTipObject = postSnap.getValue(HealthTipObject.class);
+                    if(healthTipObject !=  null)
                     {
-                        HealthTipObject healthTipObject = nodeShot.getValue(HealthTipObject.class);
-                        if(healthTipObject !=  null)
-                        {
-                            healthTipObjects.add(healthTipObject);
-                        }
+                        healthTipObjects.add(healthTipObject);
                     }
                 }
                 recyclerView.setAdapter(healthTipAdapter);

@@ -36,7 +36,7 @@ public class AddFirstAidTip extends AppCompatActivity {
 
     FirebaseStorage fireStore = FirebaseStorage.getInstance();
     StorageReference stoRef = fireStore.getReference("restaurants"+dateFormatWithTime.format(date));
-    FirebaseDatabase fireDB;
+    FirebaseDatabase fireDB = FirebaseDatabase.getInstance();
     FirebaseAuth fireAuth;
 
     Uri locLink;
@@ -135,7 +135,7 @@ public class AddFirstAidTip extends AppCompatActivity {
         String strTipCure = tipCure.getText().toString().trim();
         String strExpertsNumber = expertsNumber.getText().toString().trim();
 
-        String pushKey = fireDB.getReference().push().getKey();
+        //String pushKey = fireDB.getReference().push().getKey();
         HealthTipObject healthTipObject = new HealthTipObject(
                 strImgUrl,
                 strTipTitle,
@@ -144,6 +144,6 @@ public class AddFirstAidTip extends AppCompatActivity {
                 strTipCure,
                 strExpertsNumber);
 
-        fireDB.getReference("HealthTips").child(pushKey).setValue(healthTipObject);
+        fireDB.getReference("HealthTips").push().setValue(healthTipObject);
     }
 }
