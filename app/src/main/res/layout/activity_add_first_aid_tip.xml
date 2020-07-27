@@ -30,7 +30,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="24sp"
                         android:textColor="@color/colorPrimaryDark"
-                        android:text="Add Health Tip"/>
+                        android:text="@string/add_healthTip"/>
                     <ImageView
                         android:id="@+id/imgAidIcon"
                         android:layout_width="300dp"
@@ -42,31 +42,31 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"
-                        android:hint="Tip Title"/>
+                        android:hint="@string/hintTitle"/>
                     <EditText
                         android:id="@+id/edTipSymptoms"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
-                        android:hint="Symptoms"/>
+                        android:hint="@string/tipSympts"/>
                     <EditText
                         android:id="@+id/edTipPrevention"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="text"
-                        android:hint="Prevention"/>
+                        android:hint="@string/tipPrev"/>
                     <EditText
                         android:id="@+id/edTipCure"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="textEmailAddress"
-                        android:hint="Cure"/>
+                        android:hint="@string/tipCure"/>
                     <EditText
                         android:id="@+id/edTipExpertNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:hint="Expert's Number"/>
+                        android:hint="@string/eNumb"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                             android:background="@color/colorAccent"
                             android:textColor="#FFF"
                             android:padding="5dp"
-                            android:text="Add Image"/>
+                            android:text="@string/addImage"/>
 
                         <Button
                             android:id="@+id/btnPostTip"
@@ -91,7 +91,7 @@
                             android:background="@color/colorAccent"
                             android:textColor="#FFF"
                             android:padding="5dp"
-                            android:text="Add Tip"/>
+                            android:text="@string/addTip"/>
 
                     </LinearLayout>
                 </LinearLayout>

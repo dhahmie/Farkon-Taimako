@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Email" />
+        android:hint="@string/email" />
 
 
 
@@ -24,7 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="password"/>
+        android:hint="@string/pwd"/>
 
     <Button
         android:id="@+id/btnLogin"
@@ -32,13 +32,13 @@
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"/>
+        android:text="@string/login"/>
     <Button
         android:id="@+id/btnReg"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"/>
+        android:text="@string/signUp"/>
 
 </LinearLayout>

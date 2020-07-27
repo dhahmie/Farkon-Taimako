@@ -15,12 +15,19 @@
         android:layout_marginTop="20dp"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        android:text="Title"/>
+        android:text="@string/hintTitle"/>
     <ImageView
         android:id="@+id/imgAidIcon"
         android:layout_gravity="center_horizontal"
         android:layout_width="250dp"
         android:layout_height="250dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="@string/eNumb"
+        android:textColor="@color/colorPrimary"
+        />
     <TextView
         android:id="@+id/tvDPhone"
         android:layout_width="wrap_content"
@@ -37,7 +44,7 @@
         android:textColor="@color/colorPrimary"
         android:paddingTop="10dp"
         android:textSize="24sp"
-        android:text="Symptoms"/>
+        android:text="@string/tipSympts"/>
     <TextView
         android:id="@+id/tvDSymptoms"
         android:layout_width="wrap_content"
@@ -51,7 +58,7 @@
         android:textColor="@color/colorPrimary"
         android:paddingTop="10dp"
         android:textSize="24sp"
-        android:text="Cure"/>
+        android:text="@string/tipCure"/>
     <TextView
         android:id="@+id/tvDCure"
         android:layout_width="wrap_content"
@@ -65,12 +72,12 @@
         android:textColor="@color/colorPrimary"
         android:paddingTop="10dp"
         android:textSize="24sp"
-        android:text="Prevention"/>
+        android:text="@string/tipPrev"/>
     <TextView
         android:id="@+id/tvDPrevention"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
-        android:text="Cure"/>
+        android:text="Prevention"/>
 </LinearLayout>

@@ -13,46 +13,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="first name" />
+        android:hint="@string/fName" />
 
     <EditText
         android:id="@+id/edlastname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="last name" />
+        android:hint="@string/lName" />
 
     <EditText
         android:id="@+id/edmobilenumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="mobile number" />
+        android:hint="@string/mobNum" />
     <EditText
         android:id="@+id/edMail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Email" />
+        android:hint="@string/email" />
 
     <EditText
         android:id="@+id/edpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="password" />
+        android:hint="@string/pwd" />
 
     <EditText
         android:id="@+id/edhealthfacility"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
-        android:hint="health facility" />
+        android:hint="@string/facility" />
     <Button
         android:id="@+id/btnSignUoAdmin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sign Up"
+        android:text="@string/signUp"
         />
 
 </LinearLayout>

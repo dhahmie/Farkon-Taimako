@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Farkon Taimako</string>
+
+    <string name="add_newTip">Add New Tip</string>
+    <string name="add_healthTip">Add Health Tip</string>
+    <string name="hintTitle">Tip Title</string>
+    <string name="tipSympts">Symptoms</string>
+    <string name="tipPrev">Prevention</string>
+    <string name="tipCure">Cure</string>
+    <string name="eNumb">Expert\'s Number</string>
+    <string name="addImage">Add Image</string>
+    <string name="addTip">Add Tip</string>
+
+    <string name="fName">First name</string>
+    <string name="lName">Last name</string>
+    <string name="mobNum">Mobile number</string>
+    <string name="email">Email</string>
+    <string name="pwd">Password</string>
+    <string name="facility">Health facility</string>
+    <string name="signUp">Sign Up</string>
+
+    <string name="login">Login</string>
 </resources>
