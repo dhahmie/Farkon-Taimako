@@ -14,7 +14,7 @@
     <string name="fName">First name</string>
     <string name="lName">Last name</string>
     <string name="mobNum">Mobile number</string>
-    <string name="email">Email</string>
+    <string name="email">Email address</string>
     <string name="pwd">Password</string>
     <string name="facility">Health facility</string>
     <string name="signUp">Sign Up</string>
